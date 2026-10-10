@@ -1,6 +1,8 @@
 # OpenAccountants for Microsoft Copilot Studio
 
-Two ways to use [OpenAccountants](https://www.openaccountants.com) — 800+ accountant-verified tax skills across 190+ jurisdictions — inside Microsoft Copilot Studio.
+Two ways to use [OpenAccountants](https://www.openaccountants.com) tax Guides inside Microsoft Copilot Studio via MCP.
+
+Guides include accountant-reviewed versions and source-cited drafts. Check the [current catalogue](https://www.openaccountants.com/skills) and [review method](https://www.openaccountants.com/review-method) for each Guide's review status, reviewer, version and review date. Authorship or a jurisdiction lead's name does not establish professional review of every Guide version.
 
 ## Option A — add to your own tenant (today, ~3 minutes)
 
@@ -14,11 +16,11 @@ Any Copilot Studio admin can add OpenAccountants as an MCP server directly. No c
    - **Server name:** `OpenAccountants`
    - **Server URL:** `https://www.openaccountants.com/api/mcp`
    - **Authentication:** None
-   - **Description:** *800+ accountant-verified tax skills across 190+ jurisdictions, signed off by named licensed accountants.*
+   - **Description:** *Tax Guides with sources and published review status via OpenAccountants MCP.*
 4. Click **Add**. The Copilot Studio wizard introspects the MCP server and registers all 5 tools (`start`, `list_skills`, `get_skill`, `get_skill_sections`, `search_skills`).
 5. Save and publish your agent.
 
-Your agent now has on-demand access to every published OpenAccountants tax skill. Every output preserves the named verifier and the [Calendly](https://calendly.com/openaccountants-info/30min) handoff link to a verified accountant.
+Your agent now has on-demand access to every published OpenAccountants tax skill. Preserve the fetched Guide's review status in the answer. The [Calendly](https://calendly.com/openaccountants-info/30min) handoff provides a way to seek professional review.
 
 📸 **Screenshots:** see [`docs/screenshots.md`](./docs/screenshots.md).
 
@@ -51,11 +53,11 @@ These skills produce **working papers, not filed returns**. Every output preserv
 ## Links
 
 - Website: [openaccountants.com](https://www.openaccountants.com)
-- Skills source: [github.com/openaccountants/openaccountants](https://github.com/openaccountants/openaccountants) (AGPL-3.0)
+- Skills source: [github.com/openaccountants/openaccountants](https://github.com/openaccountants/openaccountants); [content terms](https://github.com/openaccountants/openaccountants/blob/main/LICENSING.md)
 - MCP server: `https://www.openaccountants.com/api/mcp`
 - Verified accountant network: [openaccountants.com/network](https://www.openaccountants.com/network)
 - Book a verified accountant: [calendly.com/openaccountants-info/30min](https://calendly.com/openaccountants-info/30min)
 
-## License
+## Licence
 
-MIT (this repo). Underlying skill content remains AGPL-3.0 with attribution per [LICENSE-ADDITIONAL.md in the skills repo](https://github.com/openaccountants/openaccountants/blob/main/LICENSE-ADDITIONAL.md).
+MIT for this repository. Guide content has separate terms from this wrapper. The source repository's [licensing document](https://github.com/openaccountants/openaccountants/blob/main/LICENSING.md) describes the source-available OA Guide License, commercial options, third-party copyleft exceptions and prior AGPL releases. Check the terms for the Guide version you use.
