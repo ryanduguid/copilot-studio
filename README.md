@@ -15,7 +15,7 @@ Any Copilot Studio admin can add OpenAccountants as an MCP server directly. No c
 3. Enter:
    - **Server name:** `OpenAccountants`
    - **Server URL:** `https://www.openaccountants.com/api/mcp`
-   - **Authentication:** None
+   - **Authentication:** Tool calls allow limited guest use, then need a free OpenAccountants sign-in (OAuth 2.0, per the [server card](https://www.openaccountants.com/.well-known/mcp/server-card.json)). Check that the authentication setting you choose completes that sign-in.
    - **Description:** *Tax skills with sources and published review status via OpenAccountants MCP.*
 4. Click **Add**. The Copilot Studio wizard discovers the current tools and schemas. Select the retrieval tools the agent needs, such as `start`, `list_skills`, `get_skill`, `get_skill_sections` and `search_skills`. Tools that save or send information require a separate workflow and the user's explicit agreement to share the specified information.
 5. Save and publish your agent.
@@ -40,7 +40,7 @@ Status: certification package built (this repo's [`certification-package/`](./ce
 | `get_skill_sections` | Same content split into sections (for very large skills) |
 | `search_skills` | Keyword search across published skill content |
 
-The 5 retrieval tools listed above are read-only. The MCP server is rate-limited (60 req/min per IP) but otherwise unmetered.
+The 5 retrieval tools listed above are read-only. The server card publishes a limit of 1,000 requests a day per user, and tool calls need a free OpenAccountants sign-in after limited guest use. Response headers observed on 4 November 2026 also showed a limit of 60 requests a minute.
 
 ## Jurisdictions
 

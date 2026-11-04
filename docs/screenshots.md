@@ -19,7 +19,7 @@ Click **Add a tool** → **Custom** → **Model Context Protocol**.
 Fill in:
 - **Server name:** `OpenAccountants`
 - **Server URL:** `https://www.openaccountants.com/api/mcp`
-- **Authentication:** None (the OpenAccountants MCP endpoint is public and rate-limited)
+- **Authentication:** Tool calls allow limited guest use, then need a free OpenAccountants sign-in (OAuth 2.0, per the [server card](https://www.openaccountants.com/.well-known/mcp/server-card.json)). Check that the authentication setting you choose completes that sign-in.
 - **Description:** *Tax skills with sources and version-specific review status. Check each fetched version's published review record.*
 
 Click **Add server**.
