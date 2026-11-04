@@ -45,7 +45,7 @@ Per [Microsoft's Verified Publisher certification process](https://learn.microso
 | Publisher | Glimpse Ltd (OpenAccountants) |
 | Publisher type | Verified Publisher (we own the underlying MCP server) |
 | API endpoint | `https://www.openaccountants.com/api/mcp` |
-| Authentication | None (public, read-only, rate-limited) |
+| Authentication | OAuth 2.0, per the server card: tool calls allow limited guest use, then need a free OpenAccountants sign-in; rate-limited |
 | Transport | Streamable HTTP (JSON-RPC 2.0) |
 | Categories | Productivity, Finance, AI |
 | Privacy policy | `https://www.openaccountants.com/privacy` |
