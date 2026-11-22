@@ -40,7 +40,7 @@ Status: certification package built (this repo's [`certification-package/`](./ce
 | `get_skill_sections` | Same content split into sections (for very large skills) |
 | `search_skills` | Keyword search across published skill content |
 
-The 5 retrieval tools listed above are read-only. The server card publishes a limit of 1,000 requests a day per user, and tool calls need a free OpenAccountants sign-in after limited guest use. Response headers observed on 4 November 2026 also showed a limit of 60 requests a minute.
+The 5 retrieval tools listed above are read-only. The server card publishes a limit of 1,000 requests a day per user. Response headers observed on 4 November 2026 also showed a limit of 60 requests a minute.
 
 ## Jurisdictions
 
